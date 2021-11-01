@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- etiqueta viewport -->
+
+        <title>Registrate</title>
+
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+            rel="stylesheet"
+        />
+        <!-- link íconos -->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+            rel="stylesheet"
+        />
+        <!-- link roboto -->
+
+        <script
+            src="https://kit.fontawesome.com/c49398ad30.js"
+            crossorigin="anonymous"
+        ></script>
+        <!-- link fontawesome -->
+
+        <link rel="stylesheet" href="/css/normalize.css" />
+        <!-- link normalize -->
+
+        <link rel="stylesheet" href="/css/theme.css" />
+        <!-- link theme -->
+
+        <link rel="stylesheet" href="/css/styles.css" />
+        <!-- link styles -->
+    </head>
+    <body>
+        <form action="/" method="POST">
+            <div>
+                <label>Nombre y Apellido:</label>
+                <input
+                    type="text"
+                    name="nombre"
+                    id="Nombre y Apellido"
+                    placeholder="Nombre y Apellido"
+                />
+            </div>
+            <div>
+                <label>Nombre de Usuario:</label>
+                <input
+                    type="text"
+                    name="usuario"
+                    placeholder="Nombre de Usuario"
+                />
+            </div>
+            <div>
+                <label>Fecha de Nacimiento:</label>
+                <input type="date" name="fecha" />
+            </div>
+            <div>
+                <label>Domicilio:</label>
+                <input type="text" name="domicilio" placeholder="Domicilio" />
+            </div>
+            <div>
+                <label>Perfil del Usuario:</label>
+                <select name="perfil">
+                    <option value="seleccionar" selected>
+                        Seleccionar tu categoría
+                    </option>
+                    <option value="comprar">Comprar</option>
+                    <option value="vender">Vender</option>
+                </select>
+            </div>
+            <div>
+                <label>Categorías de Interés:</label>
+                <label>Electro</label>
+                <input type="checkbox" name="categoria" value="Electro" />
+                <label>Moda</label>
+                <input type="checkbox" name="categoria" value="Moda" />
+                <label>Hogar</label>
+                <input type="checkbox" name="categoria" value="Hogar" />
+                <label>Juguetería</label>
+                <input type="checkbox" name="categoria" value="Juguetería" />
+                <label>Vida Sana</label>
+                <input type="checkbox" name="categoria" value="Vida Sana" />
+            </div>
+            <div>
+                <label>Foto de Usuario:</label>
+                <input type="file" name="foto" accept="image/jpg" />
+            </div>
+            <div>
+                <label>Contraseña:</label>
+                <input
+                    type="password"
+                    name="contraseña"
+                    placeholder="Contraseña"
+                />
+            </div>
+            <div>
+                <label>Confirmar Contraseña:</label>
+                <input
+                    type="password"
+                    name="confirmación Contraseña"
+                    placeholder="Confirmación Contraseña"
+                />
+            </div>
+            <button type="reset">Cancelar</button>
+            <button type="submit">Enviar</button>
+        </form>
+    </body>
+</html>

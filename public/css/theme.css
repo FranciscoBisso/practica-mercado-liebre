@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    font-family: Roboto, sans-serif;
+    background: #ebebeb;
+    font-size: 12px;
+}
+
+/* PALETA DE COLORES */
+.bg-yellow {
+    background: #eac926;
+}
+
+.bg-dark-gray {
+    background: #666;
+}
+
+.font-color-blue {
+    color: #03264c;
+}
+
+/* TAMAÑOS TIPOGRÁFICOS */
+.font-small {
+    font-size: 12px;
+}
+
+.font-headlines {
+    font-size: 24px;
+}
+
+.font-prices {
+    font-size: 18px;
+}
+
+.font-descriptions {
+    font-size: 16px;
+}

@@ -1,0 +1,36 @@
+.width-100 {
+    width: 100%;
+}
+
+.width-50 {
+    width: 50%;
+}
+
+.center-text {
+    text-align: center;
+}
+
+nav.navbar ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+nav.navbar ul li {
+    list-style: none;
+}
+
+.burger-menu {
+    background-color: #1259c3;
+    color: white;
+    text-align: center;
+}
+
+.discounts {
+    font-size: 16px;
+    color: #39b54a;
+}
+
+.icons-footer {
+    font-size: 2em;
+    color: #1259c3;
+}
