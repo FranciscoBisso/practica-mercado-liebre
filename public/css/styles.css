@@ -67,7 +67,10 @@ nav.navbar ul li {
 }
 
 /* FOOTER */
-
+.footer-container {
+    margin: 10px auto;
+    width: 90%;
+}
 .icons-footer {
     font-size: 2em;
     color: #1259c3;
