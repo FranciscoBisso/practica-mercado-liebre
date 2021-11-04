@@ -46,77 +46,266 @@
         <!-- link styles-desktop.css -->
     </head>
     <body>
-        <form action="/" method="POST">
-            <div>
-                <label>Nombre y Apellido:</label>
-                <input
-                    type="text"
-                    name="nombre"
-                    id="Nombre y Apellido"
-                    placeholder="Nombre y Apellido"
-                />
+        <header class="bg-yellow padding-10">
+            <section class="top-header">
+                <h1 class="width-50 padding-10">
+                    <img src="/images/logo-mercado-liebre.svg" alt="Logo" />
+                </h1>
+                <div class="search-bar width-50">
+                    <input type="text" placeholder="Buscar productos, marcas" />
+                    <button>
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <p class="center-text">
+                    <i class="fas fa-hand-holding-usd"></i>
+                    Comprá en cuotas y sin tarjeta de crédito
+                </p>
+            </section>
+
+            <nav class="navbar">
+                <ul>
+                    <li><a href="">Ofertas</a></li>
+                    <li><a href="">Tiendas Oficiales</a></li>
+                    <li><a href="">Vender</a></li>
+                    <li><a href="">Ayuda</a></li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="/register">Creá tu cuenta </a>
+                        <i class="far fa-id-card"></i>
+                    </li>
+                    <li>
+                        <a href="/login">Ingresá </a>
+                        <i class="fas fa-sign-in-alt"></i>
+                    </li>
+                    <li>
+                        <a href="">Mis compras </a>
+                        <i class="fas fa-shopping-basket"></i>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="burger-menu">
+                <i class="fas fa-bars"></i>
             </div>
-            <div>
-                <label>Nombre de Usuario:</label>
-                <input
-                    type="text"
-                    name="usuario"
-                    placeholder="Nombre de Usuario"
-                />
-            </div>
-            <div>
-                <label>Fecha de Nacimiento:</label>
-                <input type="date" name="fecha" />
-            </div>
-            <div>
-                <label>Domicilio:</label>
-                <input type="text" name="domicilio" placeholder="Domicilio" />
-            </div>
-            <div>
-                <label>Perfil del Usuario:</label>
-                <select name="perfil">
-                    <option value="seleccionar" selected>
-                        Seleccionar tu categoría
-                    </option>
-                    <option value="comprar">Comprar</option>
-                    <option value="vender">Vender</option>
-                </select>
-            </div>
-            <div>
-                <label>Categorías de Interés:</label>
-                <label>Electro</label>
-                <input type="checkbox" name="categoria" value="Electro" />
-                <label>Moda</label>
-                <input type="checkbox" name="categoria" value="Moda" />
-                <label>Hogar</label>
-                <input type="checkbox" name="categoria" value="Hogar" />
-                <label>Juguetería</label>
-                <input type="checkbox" name="categoria" value="Juguetería" />
-                <label>Vida Sana</label>
-                <input type="checkbox" name="categoria" value="Vida Sana" />
-            </div>
-            <div>
-                <label>Foto de Usuario:</label>
-                <input type="file" name="foto" accept="image/jpg" />
-            </div>
-            <div>
-                <label>Contraseña:</label>
-                <input
-                    type="password"
-                    name="contraseña"
-                    placeholder="Contraseña"
-                />
-            </div>
-            <div>
-                <label>Confirmar Contraseña:</label>
-                <input
-                    type="password"
-                    name="confirmación Contraseña"
-                    placeholder="Confirmación Contraseña"
-                />
-            </div>
-            <button type="reset">Cancelar</button>
-            <button type="submit">Enviar</button>
-        </form>
+        </header>
+
+        <main class="register-container">
+            <h2 class="register-headline">Registrate</h2>
+            <form class="register-form-flex" action="/" method="POST">
+                <div>
+                    <label for="nombre"></label>
+                    <input
+                        class="resgister-text-inputs"
+                        type="text"
+                        name="nombre"
+                        id="nombre"
+                        placeholder=" Nombre y Apellido"
+                    />
+                </div>
+
+                <div>
+                    <label for="usuario"></label>
+                    <input
+                        class="resgister-text-inputs"
+                        type="text"
+                        name="usuario"
+                        id="usuario"
+                        placeholder=" Nombre de Usuario"
+                    />
+                </div>
+
+                <div>
+                    <label class="register-texts-decorations" for="fecha"
+                        >Fecha de Nacimiento:</label
+                    >
+                    <input
+                        class="resgister-date-input"
+                        type="date"
+                        name="fecha"
+                        id="fecha"
+                    />
+                </div>
+
+                <div>
+                    <label for="domicilio"></label>
+                    <input
+                        class="resgister-text-inputs"
+                        type="text"
+                        name="domicilio"
+                        id="domicilio"
+                        placeholder=" Domicilio"
+                    />
+                </div>
+
+                <div class="user-category">
+                    <label class="register-texts-decorations"
+                        >Perfil del Usuario:</label
+                    >
+                    <select name="perfil">
+                        <option value="comprador">Comprador</option>
+                        <option value="vendedor">Vendedor</option>
+                    </select>
+                </div>
+
+                <div class="user-interests">
+                    <label class="register-texts-decorations">Intereses:</label>
+
+                    <div class="sub-divs">
+                        <input
+                            type="checkbox"
+                            name="categoria"
+                            id="electro"
+                            value="electro"
+                        />
+                        <label
+                            class="register-subtexts-decorations"
+                            for="electro"
+                            >Electro</label
+                        >
+                    </div>
+
+                    <div class="sub-divs">
+                        <input
+                            type="checkbox"
+                            name="categoria"
+                            id="moda"
+                            value="moda"
+                        />
+                        <label class="register-subtexts-decorations" for="moda"
+                            >Moda</label
+                        >
+                    </div>
+
+                    <div class="sub-divs">
+                        <input
+                            type="checkbox"
+                            name="categoria"
+                            id="hogar"
+                            value="hogar"
+                        />
+                        <label class="register-subtexts-decorations" for="hogar"
+                            >Hogar</label
+                        >
+                    </div>
+
+                    <div class="sub-divs">
+                        <input
+                            type="checkbox"
+                            name="categoria"
+                            id="juguetería"
+                            value="Juguetería"
+                        />
+                        <label
+                            class="register-subtexts-decorations"
+                            for="juguetería"
+                            >Juguetería</label
+                        >
+                    </div>
+
+                    <div class="sub-divs">
+                        <input
+                            type="checkbox"
+                            name="categoria"
+                            id="saludable"
+                            value="vida sana"
+                        />
+                        <label
+                            class="register-subtexts-decorations"
+                            for="saludable"
+                            >Vida Sana</label
+                        >
+                    </div>
+                </div>
+
+                <div class="user-photo">
+                    <label class="register-texts-decorations" for="foto"
+                        >Foto de Usuario:</label
+                    >
+                    <input
+                        type="file"
+                        name="foto"
+                        id="foto"
+                        accept="image/jpg"
+                    />
+                </div>
+
+                <div class="register-form-divs">
+                    <label for="contraseña"></label>
+                    <input
+                        class="resgister-text-inputs"
+                        type="password"
+                        name="contraseña"
+                        id="contraseña"
+                        placeholder=" Contraseña"
+                    />
+                </div>
+
+                <div>
+                    <label for="confirmación"></label>
+                    <input
+                        class="resgister-text-inputs"
+                        type="password"
+                        name="confirmación contraseña"
+                        id="confirmación"
+                        placeholder=" Confirmar Contraseña"
+                    />
+                </div>
+
+                <div class="register-buttons-box">
+                    <button
+                        class="register-buttons"
+                        type="reset"
+                        class="button-decoration"
+                    >
+                        Borrar
+                    </button>
+                    <button
+                        class="register-buttons"
+                        type="submit"
+                        class="button-decoration"
+                    >
+                        Enviar
+                    </button>
+                </div>
+            </form>
+        </main>
+
+        <footer class="bg-white register-footer-container">
+            <section class="center-text">
+                <i class="fas fa-credit-card icons-register"></i>
+                <h3>Pagá con tarjeta o en efectivo</h3>
+                <p class="register-p">
+                    Con Mercado Liebre Cash, tenés cuotas sin interés con
+                    tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!
+                </p>
+            </section>
+
+            <section class="center-text">
+                <i class="fas fa-gift icons-register"></i>
+                <h3>Envío gratis desde $ 2.500</h3>
+                <p class="footer-p">
+                    Solo por estar registrad@ en Mercado Liebre tenés envíos
+                    gratis en miles de productos. Es un beneficio de Mercado
+                    Puntos.
+                </p>
+            </section>
+
+            <section class="center-text">
+                <i class="fas fa-user-shield icons-register"></i>
+                <h3>Seguridad, de principio a fin</h3>
+                <p class="register-p">
+                    ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que
+                    no puedas hacer, porque estás siempre protegido.
+                </p>
+            </section>
+
+            <section>
+                <p class="register-copyright">
+                    Copyright © 1999-2020 MercadoLiebre S.R.L.
+                </p>
+            </section>
+        </footer>
     </body>
 </html>

@@ -47,6 +47,7 @@
 
 .center-text {
     text-align: center;
+    color: #03264c;
 }
 
 .navbar {
@@ -54,7 +55,7 @@
 }
 
 nav.navbar ul li a {
-    color: black;
+    color: #03264c;
     text-decoration: none;
 }
 
@@ -152,5 +153,162 @@ nav.navbar ul li {
 }
 
 .copyright {
+    padding: 5px;
+}
+
+/* LOGIN */
+
+.login-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.login-headline {
+    margin: 10px 0px 0px;
+    font-size: 24px;
+    text-align: center;
+    color: #03264c;
+}
+
+.login-form-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-inputs {
+    width: 100%;
+    padding: 5px;
+    margin: 10px auto;
+    border: none;
+    border-radius: 5px;
+}
+
+.login-button {
+    width: 100%;
+    background-color: #1259c3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px auto;
+}
+
+.login-footer-container {
+    margin: 10px auto 0px;
+    width: 90%;
+    height: 100%;
+}
+
+.icons-login {
+    font-size: 2em;
+    color: #1259c3;
+    margin: 15px 0 5px 0;
+}
+
+.login-p {
+    margin: 0 10px 10px;
+    padding: 0 10px;
+}
+
+.login-copyright {
+    padding: 5px;
+}
+
+/* REGISTER */
+.register-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.register-headline {
+    margin: 10px 0px 0px;
+    font-size: 24px;
+    text-align: center;
+    color: #03264c;
+}
+
+.register-form-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.resgister-text-inputs {
+    width: 100%;
+    padding: 5px;
+    margin: 10px auto;
+    border: none;
+    border-radius: 5px;
+}
+
+.resgister-date-input {
+    width: 100%;
+    padding: 5px;
+    margin: 10px auto;
+    border: none;
+    border-radius: 5px;
+}
+
+.user-category {
+    margin: 10px 10px 10px 0px;
+}
+
+.user-interests {
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-divs {
+    padding: 5px;
+}
+
+.user-photo {
+    margin: 10px 10px 10px 0px;
+}
+
+.register-texts-decorations {
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+}
+
+.register-subtexts-decorations {
+    color: black;
+}
+
+.register-buttons-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.register-buttons {
+    width: 45%;
+    background-color: #1259c3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px auto;
+}
+
+/* /////REGISTER-FOOTER///// */
+.register-footer-container {
+    margin: 10px auto 0px;
+    width: 90%;
+    height: 100%;
+}
+
+.icons-register {
+    font-size: 2em;
+    color: #1259c3;
+    margin: 15px 0 5px 0;
+}
+
+.register-p {
+    margin: 0 10px 10px;
+    padding: 0 10px;
+}
+
+.register-copyright {
     padding: 5px;
 }
