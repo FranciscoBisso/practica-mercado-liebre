@@ -10,7 +10,22 @@
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 
+    .product .trucks {
+        transition: transform 0.5s;
+    }
+    .product:hover .trucks {
+        transform: rotate(-90deg);
+    }
+
     .hide-description {
         display: none;
+    }
+
+    .product:hover .hide-description {
+        display: block;
+    }
+
+    .flexer {
+        display: flex;
     }
 }

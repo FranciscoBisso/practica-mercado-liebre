@@ -138,8 +138,8 @@ nav.navbar ul li {
 /* FOOTER */
 
 .footer-container {
-    margin: 10px auto;
-    width: 90%;
+    margin: 10px auto 0px;
+    width: 100%;
 }
 .icons-footer {
     font-size: 2em;
@@ -195,8 +195,7 @@ nav.navbar ul li {
 
 .login-footer-container {
     margin: 10px auto 0px;
-    width: 90%;
-    height: 100%;
+    width: 100%;
 }
 
 .icons-login {
@@ -293,8 +292,7 @@ nav.navbar ul li {
 
 .register-footer-container {
     margin: 10px auto 0px;
-    width: 90%;
-    height: 100%;
+    width: 100%;
 }
 
 .icons-register {
