@@ -12,6 +12,38 @@
     width: 50%;
 }
 
+.top-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.search-bar input {
+    background-color: white;
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    flex-grow: 1;
+    padding: 5px;
+}
+
+.search-bar button {
+    background-color: white;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
 .center-text {
     text-align: center;
 }
@@ -42,9 +74,20 @@ nav.navbar ul li {
 }
 
 /* MAIN */
+
 .container {
     width: 90%;
     margin: 0 auto;
+}
+
+.articles-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wrapper {
+    width: 100%;
+    padding: 0 10px;
 }
 
 .product {
@@ -55,18 +98,38 @@ nav.navbar ul li {
 .product .product-content {
     padding: 15px;
     border-top: 1px solid #ebebeb;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .trucks {
     color: #39b54a;
+    display: ​block​;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+.prices {
+    width: 30%;
 }
 
 .discounts {
     font-size: 16px;
     color: #39b54a;
+    width: 70%;
 }
 
 /* FOOTER */
+
 .footer-container {
     margin: 10px auto;
     width: 90%;

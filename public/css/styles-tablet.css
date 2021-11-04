@@ -1,11 +1,29 @@
 @media (min-width: 480px) {
+    .top-header {
+        flex-wrap: nowrap;
+    }
+
     .navbar {
-        display: block;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navbar ul {
+        display: flex;
+    }
+
+    .navbar li {
+        margin: 0 1px;
     }
 
     .burger-menu {
         display: none;
     }
+
+    .wrapper {
+        width: 50%;
+    }
+
     .product {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
