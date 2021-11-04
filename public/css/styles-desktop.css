@@ -1,4 +1,8 @@
 @media (min-width: 1200px) {
+    .navbar li {
+        margin: 0 15px 10px;
+    }
+
     .wrapper {
         width: 25%;
     }

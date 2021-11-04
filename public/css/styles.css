@@ -76,6 +76,11 @@ nav.navbar ul li {
 
 /* MAIN */
 
+.headlines {
+    font-size: 24px;
+    margin: 10px 0px 10px 10px;
+}
+
 .container {
     width: 90%;
     margin: 0 auto;
